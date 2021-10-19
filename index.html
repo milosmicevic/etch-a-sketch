@@ -6,10 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <script defer src="script.js"></script>
     <title>Etch A Sketch</title>
   </head>
   <body>
-    <div id="container"></div>
+    <div id="container">
+      <header>
+        <h1>Etch A Sketch</h1>
+      </header>
+      <main>
+        <div class="options-container">
+          <div class="color-picker-container">
+            <input type="color" class="color-picker" value="#4c5c68" />
+          </div>
+          <div class="draw-button"><i class="fas fa-pencil-alt"></i></div>
+          <div class="eraser-button"><i class="fas fa-eraser"></i></div>
+          <div class="clear-button"><i class="fas fa-backspace"></i></div>
+          <label class="slider-label" for="slider">16 x 16</label>
+          <input type="range" min="8" max="48" value="16" class="slider" />
+        </div>
+        <div class="board-container">
+          <div class="board"></div>
+        </div>
+      </main>
+      <footer>
+        <p>Copyright © 2021</p>
+        <a href="https://github.com/milosmicevic" target="_blank">
+          milosmicevic <i class="fab fa-github"></i
+        ></a>
+      </footer>
+    </div>
   </body>
 </html>
