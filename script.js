@@ -31,6 +31,7 @@ function reloadGrid(size) {
 function changeGridSize(size) {
   gridSize = size;
   reloadGrid(gridSize);
+  draw();
 }
 
 function selectColor(event) {
